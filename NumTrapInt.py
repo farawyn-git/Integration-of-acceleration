@@ -46,6 +46,9 @@ t = np.arange(start, end_ana, step)
 # Kreisfrequenz:
 w = 2 * np.pi * f
 
+
+##### Berechnung der therorethischen Beschleunigung #####
+
 # Beschleunigung (analytisch):
 a = A * np.sin(w * t)
 
@@ -61,6 +64,9 @@ v = fv * np.cos(w*t)
 
 # Weg (analytisch):
 s = -1 * (A / w**2) * np.sin(w*t)
+
+
+
 
 '''
 Integration numerisch:
@@ -149,6 +155,7 @@ xf_num = rfftfreq(N_num, dx)[0:N_num//2]
 
 # amp_fft = signal.find_peaks(np.abs(yf_num), height=5)
 # print(f'amp_fft: {amp_fft}')
+
 
 
 '''
