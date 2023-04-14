@@ -28,8 +28,7 @@ Integration analytisch:
 Berechnung der Geschwindigkeit und des Weges mittels analytischer Methoden.
 '''
 
-##### Annahmen #####
-
+### Annahmen 
 # Weg Amplitude in m/s²
 A = 9.81
 
@@ -46,8 +45,7 @@ t = np.arange(start, end_ana, step)
 # Kreisfrequenz:
 w = 2 * np.pi * f
 
-
-##### Berechnung der therorethischen Beschleunigung #####
+### Analytische Berechnung von Beschleunigung, Geschwingigkeit und Weg
 
 # Beschleunigung (analytisch):
 a = A * np.sin(w * t)
