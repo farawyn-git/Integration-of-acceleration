@@ -45,6 +45,7 @@ t = np.arange(start, end_ana, step)
 # Kreisfrequenz:
 w = 2 * np.pi * f
 
+
 ### Analytische Berechnung von Beschleunigung, Geschwingigkeit und Weg
 # Beschleunigung (analytisch):
 a = A * np.sin(w * t)
@@ -61,7 +62,6 @@ v = fv * np.cos(w*t)
 
 # Weg (analytisch):
 s = -1 * (A / w**2) * np.sin(w*t)
-
 
 
 
