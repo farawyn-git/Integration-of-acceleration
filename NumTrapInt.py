@@ -169,7 +169,7 @@ x_max = 1
 
 # Plot Beschleunigung
 ax0.plot(t, a)                                          # analytisch
-ax0.plot(ts, df['acc'])                                 # numerisch
+ax0.plot(ts, df['acc'])                                 # gemessen
 ax0.axis(xmin = x_min, xmax = x_max)
 ax0.set_xlabel('Time [s]')
 ax0.set_ylabel('Beschleunigung [m/s²]')
