@@ -25,7 +25,7 @@ w = 2 * Pi * f
 
 '''
 Integration analytisch:
-Berechnung der Geschwindigkeit und des Weges mittels analytischer Verfahren.
+Berechnung der Geschwindigkeit und des Weges mittels analytischer Methoden.
 '''
 
 ##### Annahmen #####
