@@ -46,7 +46,6 @@ t = np.arange(start, end_ana, step)
 w = 2 * np.pi * f
 
 ### Analytische Berechnung von Beschleunigung, Geschwingigkeit und Weg
-
 # Beschleunigung (analytisch):
 a = A * np.sin(w * t)
 
