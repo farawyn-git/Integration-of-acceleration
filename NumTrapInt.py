@@ -95,11 +95,11 @@ amp_acc = (max_acc - min_acc) // 2
 
 print('')
 print('Kennwerte Beschleunigungsignal:')
-print(f'fs:  {samplerate}')
-print(f'Mean: {mean_acc}')
-print(f'Min: {min_acc}')
-print(f'Max: {max_acc}')
-print(f'Amp: {amp_acc}')
+print(f'fs:  {samplerate} Hz')
+print(f'Mean: {mean_acc} m/s²')
+print(f'Min: {min_acc} m/s²')
+print(f'Max: {max_acc} m/s²')
+print(f'Amp: {amp_acc} m/s²')
 
 
 ### Kennwerte Geschwindigkeitssignal:
@@ -110,11 +110,11 @@ amp_vel = (max_vel - min_vel) // 2
 
 print('')
 print('Kennwerte Geschwindigkeitssignal:')
-print(f'fs:  {samplerate}')
-print(f'Mean: {mean_vel}')
-print(f'Min: {min_vel}')
-print(f'Max: {max_vel}')
-print(f'Amp: {amp_vel}')
+print(f'fs:  {samplerate} Hz')
+print(f'Mean: {mean_vel} mm/s')
+print(f'Min: {min_vel} mm/s')
+print(f'Max: {max_vel} mm/s')
+print(f'Amp: {amp_vel} mm/s')
 
 
 #### Geschwindigkeit (numerisch integriert):
@@ -133,10 +133,10 @@ amp_v = (max_v + np.abs(min_v)) // 2
 
 print('')
 print('Kennwerte Geschwindigkeit integriert:')
-print(f'Mean: {mean_v}')
-print(f'Min: {min_v}')
-print(f'Max: {max_v}')
-print(f'Amp: {amp_v}')
+print(f'Mean: {mean_v} mm/s')
+print(f'Min: {min_v} mm/s')
+print(f'Max: {max_v} mm/s')
+print(f'Amp: {amp_v} mm/s')
 
 
 #### Weg (numerisch integriert):
