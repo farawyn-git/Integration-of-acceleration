@@ -73,6 +73,7 @@ Berechnung der Geschwindigkeit und es Wegs mit Hilfe des Trapezverfahrens.
 ### Daten Einlesen
 df = pd.read_csv('test1.csv', sep=';', header=None, names=['time', 'acc', 'speed'])
 
+# Daten Begrenzen
 df = df.iloc[0:5996]
 # 5996 = 1sec
 
@@ -163,7 +164,7 @@ Plotten der Daten mit Matplotlib
 # Plot object erzeugen
 fig, (ax0, ax1, ax2, ax3) = plt.subplots(4, 1)
 
-# 
+# Maxima der X-Achse der Zeit-Daten
 x_min = 0
 x_max = 1
 
