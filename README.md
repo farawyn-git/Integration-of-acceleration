@@ -1,2 +1,6 @@
 # Integration-of-acceleration
-Collection of tools for numerical integration of acceleration signals in python
+It#s the Beginning for a cllection of tools
+for numerical integration and interpretation
+of acceleration signals in python.
+
+
