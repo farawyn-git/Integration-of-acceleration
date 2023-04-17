@@ -19,15 +19,14 @@ f2 = 1500
 a3 = 0.1
 f3 = 2000
 
-
 y = a1 * np.sin(2*np.pi*f1*x) + a2 * np.sin(2*np.pi*f2*x) + a3 * np.sin(2*np.pi*f3*x)
 print(np.size(y))
 
 print(type(x))
 
-arr = np.concatenate((x, y), axis = 0)
+# arr = np.concatenate((x, y), axis = 0)
 # df = pd.DataFrame(arr)
-print(arr)
+# print(arr)
 
 
 ### Hanning  Window
@@ -50,8 +49,6 @@ xf_filtered = rfftfreq(n_samples, dx)
 
 
 ### Plotting
-
-
 fig, (ax0, ax1, ax2, ax3) = plt.subplots(4, 1)
 plt.style.context('ggplot')
 
