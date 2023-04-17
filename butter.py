@@ -19,7 +19,7 @@ f2 = 1500
 a3 = 0.1
 f3 = 2000
 
-y = a1 * np.sin(2*np.pi*f1*x) + a2 * np.sin(2*np.pi*f2*x) + a3 * np.sin(2*np.pi*f3*x)
+y = a1*np.sin(2*np.pi*f1*x) + a2*np.sin(2*np.pi*f2*x) + a3*np.sin(2*np.pi*f3*x)
 print(np.size(y))
 
 print(type(x))
