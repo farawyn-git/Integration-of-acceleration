@@ -20,17 +20,11 @@ a3 = 0.1
 f3 = 2000
 
 y = a1*np.sin(2*np.pi*f1*x) + a2*np.sin(2*np.pi*f2*x) + a3*np.sin(2*np.pi*f3*x)
-print(np.size(y))
-
-print(type(x))
-
-# arr = np.concatenate((x, y), axis = 0)
-# df = pd.DataFrame(arr)
-# print(arr)
 
 
 ### Hanning  Window
 han_win = signal.windows.hann(n_samples, sym=False)
+
 
 ### FFT
 yf = rfft(y)
@@ -41,6 +35,7 @@ xf = rfftfreq(n_samples, dx)
 ### Butterworth Filter
 sos = signal.butter(6, 100, 'lp', fs=fs, output='sos')
 filtered = signal.sosfilt(sos, y)
+
 
 ### FFT
 yf_filtered = rfft(filtered)
