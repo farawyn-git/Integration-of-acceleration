@@ -10,22 +10,20 @@ data = {
 }
 
 df = pd.DataFrame(data, dtype=float)
-df1 = df[['MP1', 'MP2']]
 
 np_data = df['time'].to_numpy()
 np_data = np_data[0:-1]
 i = 10
 
-for col in df1.columns:
-    v = cumtrapz(df1['MP1'], df['time'])
-    np_data = np.column_stack((np_data, v))
+for col in df.columns[1:]:
+    v = cumtrapz(df[col], df['time'])
+    np_data = np.column_stack((np_data, v*i))
+    i = i * 10
 
-
-df2 = pd.DataFrame(np_data, columns=['time','MP1','MP2'])
-print(df2)
-
+df1 = pd.DataFrame(np_data, columns=['time','MP1','MP2'])
+print(df1)
 
 df.plot(kind='line', xlabel='Time', ylabel='Beschleunigung')
-df2.plot()
+df1.plot()
 plt.show()
 
